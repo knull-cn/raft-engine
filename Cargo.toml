@@ -64,4 +64,5 @@ protobuf = { git = "https://github.com/pingcap/rust-protobuf", branch = "v2.8" }
 protobuf-codegen = { git = "https://github.com/pingcap/rust-protobuf", branch = "v2.8" }
 
 [workspace]
-members = ["stress", "ctl"]
+# 这里是指定 目录; 但是，在 run 的时候是  `cargo run -p step1`
+members = ["stress", "ctl","study/step1"]
